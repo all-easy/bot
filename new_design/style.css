@@ -1,0 +1,194 @@
+/* Variables */
+:root {
+    --bg-color: #000000;
+    --text-color-main: #ffffff;
+    --text-color-contact-primary: #868686;
+    --text-color-contact-end-first: #32FF46;
+    --text-color-contact-end-second: #3246FF;
+    --text-color-contact-end-third: #32DAFF;
+    --text-color-illustration-first-line-primary: #3246FF;
+    --text-color-illustration-first-line-secondary: #FF3232;
+    --text-color-illustration-second-line-primary: #FF32F7;
+    --text-color-illustration-second-line-secondary: #FF3232;
+    --text-color-illustration-third-line-primary: #FFD232;
+    --text-color-illustration-third-line-secondary: #FF3232;
+
+    --content-width-lg: 33%;
+    --content-width-sm: 100%;
+
+    --font-size-main: 2.75rem;
+    --font-size-md: 1.25rem;
+    --font-size-sm: 0.875rem;
+
+    --btn-width: 460px;
+    --pic-width: 460px;
+    --command-width: 159px;
+    --command-push-width: 429px;
+    --command-currency-width: 239px;
+
+    --multiplicator-sm: 0.75;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color-main);
+    font-size: var(--font-size-main);
+}
+
+.container {
+    margin: auto;
+    width: var(--content-width-lg);
+    min-width: 460px;
+}
+
+.mb_primary {
+    margin-bottom: 7.5rem;
+}
+
+.mb_secondary {
+    margin-bottom: 15rem;
+}
+
+
+/* Contact */
+.contact {
+    color: var(--text-color-contact-primary);
+}
+
+.contact_font_sm {
+    font-size: var(--font-size-sm);
+}
+
+.contact_color_first {
+    color: var(--text-color-contact-end-first);
+}
+
+.contact_color_second {
+    color: var(--text-color-contact-end-second);
+}
+
+.contact_color_third {
+    color: var(--text-color-contact-end-third);
+}
+
+/* Content */
+.content_font_md {
+    font-size: var(--font-size-md);
+}
+
+.content_color_font_first_line_one {
+    color: var(--text-color-illustration-first-line-primary);
+}
+
+.content_color_font_first_line_two {
+    color: var(--text-color-illustration-first-line-secondary);
+}
+
+.content_color_font_second_line_one {
+    color: var(--text-color-illustration-second-line-primary);
+}
+
+.content_color_font_second_line_two {
+    color: var(--text-color-illustration-second-line-secondary);
+}
+
+.content_color_font_third_line_one {
+    color: var(--text-color-illustration-third-line-primary);
+}
+
+.content_color_font_third_line_two {
+    color: var(--text-color-illustration-third-line-secondary);
+}
+
+.btn_width {
+    width: var(--btn-width);
+}
+
+.command_width {
+    width: var(--command-width);
+}
+
+.command_push_width {
+    width: var(--command-push-width);
+}
+
+.command_currency_width {
+    width: var(--command-currency-width);
+}
+
+.pic_width {
+    width: var(--pic-width);
+}
+
+/* Buttons effect */
+.hoverable {
+    display: block;
+}
+
+.hoverable img.btn_effect_shown {
+    display: block;
+    cursor: pointer;
+}
+
+.hoverable img.btn_effect_hidden {
+    display: none;
+}
+
+.hoverable:hover img.btn_effect_shown {
+    display: none;
+}
+
+.hoverable:hover img.btn_effect_hidden {
+    display: block;
+    cursor: pointer;
+}
+
+/* Mobile version */
+@media screen and (max-width: 460px) {
+    .container {
+        width: var(--content-width-sm);
+        min-width: 300px;
+    }
+
+    body {
+        font-size: calc(var(--font-size-main) * var(--multiplicator-sm));
+    }
+
+    .contact_font_sm {
+        font-size: calc(var(--font-size-sm) * var(--multiplicator-sm));
+    }
+
+    .content_font_md {
+        font-size: calc(var(--font-size-md) * var(--multiplicator-sm));
+    }
+
+    .btn_width {
+        width: calc(var(--btn-width) * var(--multiplicator-sm));
+    }
+
+    .command_width {
+        width: calc(var(--command-width) * var(--multiplicator-sm));
+    }
+
+    .command_push_width {
+        width: calc(var(--command-push-width) * var(--multiplicator-sm));
+    }
+
+    .command_currency_width {
+        width: calc(var(--command-currency-width) * var(--multiplicator-sm));
+    }
+
+    .pic_width {
+        width: calc(var(--pic-width) * var(--multiplicator-sm));
+    }
+}
