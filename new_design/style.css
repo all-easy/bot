@@ -46,24 +46,48 @@ body {
 }
 
 .container {
-    margin: auto;
-    width: var(--content-width-lg);
     min-width: 460px;
+}
+
+.container.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mb_primary {
     margin-bottom: 7.5rem;
 }
 
+.title {
+  cursor: pointer;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2.75rem;
+  font-style: normal;
+  color: var(--text-color-contact-primary);
+}
+
+.contact {
+  overflow: hidden;
+  transition: height 800ms;
+  height: 0;
+  margin-top: 2.75rem;
+  margin-bottom: 5rem;
+}
+
+.contact_list .text_block.info {
+  margin-top: 2.5rem;
+}
+
 .mb_secondary {
     margin-bottom: 15rem;
 }
 
-
-/* Contact */
-.contact {
-    color: var(--text-color-contact-primary);
-}
 
 .contact_font_sm {
     font-size: var(--font-size-sm);
