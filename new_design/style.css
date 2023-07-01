@@ -19,13 +19,7 @@
     --font-size-main: 2.75rem;
     --font-size-md: 1.25rem;
     --font-size-sm: 0.875rem;
-
-    --btn-width: 460px;
-    --pic-width: 460px;
-    --command-width: 159px;
-    --command-push-width: 429px;
-    --command-currency-width: 239px;
-
+    
     --multiplicator-sm: 0.75;
 }
 
@@ -267,7 +261,7 @@ body {
         min-width: 300px;
     } */
 
-    body {
+    /* body {
         font-size: calc(var(--font-size-main) * var(--multiplicator-sm));
     }
 
@@ -293,5 +287,5 @@ body {
 
     .pic_width {
         width: calc(var(--pic-width) * var(--multiplicator-sm));
-    }
+    } */
 }
