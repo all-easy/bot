@@ -4,52 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Push Money Bot</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>PushMoneyBot</title>
 </head>
 
 <body>
-<!-- Header -->
-<div class="header">
-    <img src="./img/bot.jpg" alt="bot" class="bot_img"/>
-    <br>
+    <div class="container flex">
+        <div class="container_inner">
 
-    <p class="header_title">
-        Hold and optimize common expenses with your friends with <a href="https://t.me/PushMyMoneyBot">PushMoneyBot</a></p>
+          <div class="container_inner_inner">
 
-    <div class="buttons">
-        <a href="#get_started_link" class="button_link button_get_started">Get started</a>
-        <a href="#features_link" class="button_link button_read_more">Read more</a>
+            <div class="contact_container close" id="contact_container">
+
+                <div id="title" class="title">contact &gt;</div>
+
+                <div class="contact mb_primary" id="contact_end">
+                    <div id="list" class="contact_list">
+                        <div class="text_block">
+                            <span class="contact_font_sm">dev homie</span>
+                            <div class="svg_block">
+                                <a class="contact_color_first" href="https://www.linkedin.com/in/denis-kartavenko/" target="_blank">DennyKort</a>
+                                <img src="./img/illustration_contact_1.svg" alt="">
+                            </div>
+                            <div class="svg_block">
+                                <a class="contact_color_second" href="https://www.linkedin.com/in/olegkdev/" target="_blank">OlegKDev</a>
+                                <img src="./img/illustration_contact_2.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="text_block">
+                          <span class="contact_font_sm">design</span>
+                          <div class="svg_block">
+                              <a class="contact_color_third" href="https://www.linkedin.com/in/anthonymironov" target="_blank">Anthony</a>
+                              <img src="./img/illustration_contact_3.svg" alt="">
+                          </div>
+                        </div>
+
+                        <div class="text_block">
+                          <span class="contact_font_sm">contribute</span>
+                          <div class="svg_block">
+                              <a class="contact_color_third" href="https://github.com/all-easy/push-service" target="_blank">GitHub</a>
+                              <img src="./img/illustration_contact_3.svg" alt="">
+                          </div>
+                        </div>
+
+                        <div class="text_block info">
+                          <div class="contact_font_sm">PushMyMoneyBot 2021-2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mb_primary">
+                <div>hello!</div>
+                <div class="svg_block">
+                    <span>you throw party</span>
+                    <img src="./img/illustration_content_1.svg" alt="">
+                </div>
+                <div class="svg_block">
+                    <span>we optimize bills</span>
+                    <img class="dots" src="./img/illustration_content_2.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="mb_primary">
+                <div>just add bot to</div>
+                <div>telegram group</div>
+                <div class="hoverable">
+                    <img class="btn_width btn_effect_shown" id="btn_start" src="./img/button_add_bot.svg" alt="">
+                    <img class="btn_width btn_effect_hidden" src="./img/button_add_bot_1.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="mb_secondary">
+                <div>then type...</div>
+                <div class="dialog_block">
+                    <div class="align_right">
+                        <img class="command_width" src="./img/command_addme.svg" alt="">
+                    </div>
+                    <div class="align_left">
+                        <img class="command_width" src="./img/command_addme_all.svg" alt="">
+                    </div>
+                    <div class="align_right">
+                        <img class="command_currency_width" src="./img/command_currency.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb_secondary with_picture">
+                <div>have an amazing party</div>
+                <div>and save all receipts</div>
+                <img class="pic_width" src="./img/pic_1.svg" alt="">
+            </div>
+
+            <!--
+                push expenses
+              -->
+            <div class="mb_secondary push">
+                <div>push expenses</div>
+                <div class="dialog">
+                    <img class="command_push_width" src="./img/command_push.svg" alt="">
+                </div>
+
+                <div class="svg_block">
+                    <img src="./img/Illustration_content_2.svg" alt="">
+                    <div class="content_font_md">
+                        <span>
+                          Expense 13 $ USD to user </br>
+                          CoolDude has been successfully </br>
+                          added, description: extra cola</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                don't keep
+                anything in mind
+             -->
+            <div class="mb_secondary with_picture">
+                <div>don't keep</div>
+                <div>anything in mind</div>
+                <img class="pic_width" src="./img/pic_2.svg" alt="">
+            </div>
+
+            <!--
+                we optimized
+                all expenses
+              -->
+            <div class="mb_secondary">
+                <div> we optimized</div>
+                <div>all expenses</div>
+
+                <div class="dialog_block">
+                    <div class="align_right">
+                        <img class="command_width" src="./img/command_result.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="result_block">
+                    <div class="svg_block">
+                        <img src="./img/Illustration_content_2.svg" alt="">
+                    </div>
+                    <div class="content_font_md">
+                        <div>
+                            <span class="content_color_font_first_line_one">CoolDude</span> owes
+                            <span class="content_color_font_first_line_two">you</span> 13 $ USD extra cola
+                        </div>
+                        <div>
+                            <span class="content_color_font_second_line_one">NiceGirl</span> owes
+                            <span class="content_color_font_second_line_two">you</span> 4 $ USD
+                        </div>
+                        <div>
+                            <span class="content_color_font_third_line_one">OneMoreGuy123</span> owes
+                            <span class="content_color_font_third_line_two">you</span> 4 $ USD
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                whoa!
+                time for a new party
+                don't forget to keep
+                your receipts
+             -->
+            <div class="mb_secondary">
+                <div>whoa!</div>
+                <div>time for a new party
+                    <img src="./img/Illustration_content_1.svg" alt="">
+                </div>
+                <div>don't forget to keep</div>
+                <div>your receipts</div>
+            </div>
+
+          </div>
+
+        </div>
+
     </div>
-
-</div>
-
-<div class="get_started" id="get_started_link">
-    <p class="section_title">Quick start</p>
-    <ul class="get_started_list">
-        <li>Create Telegram group</li>
-        <li>Add <a href="https://t.me/PushMyMoneyBot"><b>PushMoneyBot</b></a> to the created group</li>
-        <li>Group members have to register themselves with the bot, by typing <b>/addme</b> command</li>
-        <li>Use commands to create and manage expense records</li>
-    </ul>
-</div>
-
-<!-- Features -->
-<div class="features" id="features_link">
-    <p class="section_title">Features</p>
-    <ul class="features_list">
-        <li>Unlimited Group Members</li>
-        <li>Multiple Currencies</li>
-        <li>Fast Money Balance</li>
-    </ul>
-    <img src="./img/bot_instructions.svg" alt="Picture" class="picture_img">
-</div>
-</div>
-
-<!-- Contacts -->
-<div class="contacts">
-    <a href="https://github.com/all-easy/push-service" target="_blank">GitHub</a>
-</div>
 </body>
 
 </html>
