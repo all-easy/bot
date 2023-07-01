@@ -120,7 +120,7 @@ body {
     font-size: 2.75rem;
 }
 
-.mb_secondary.party img {
+.mb_secondary.with_picture img {
   margin-top: 2.25rem;
 }
 
@@ -145,6 +145,27 @@ body {
 }
 
 .mb_secondary.push .svg_block .content_font_md {
+  margin-top: 1rem;
+}
+
+.mb_secondary .result_block {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.mb_secondary .result_block .svg_block {
+  margin-right: 1.4rem;
+}
+
+.mb_secondary .result_block .svg_block img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: -0.5rem;
+}
+
+.mb_secondary .result_block .content_font_md {
+  margin-left: -0.5rem;
   margin-top: 1rem;
 }
 
