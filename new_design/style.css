@@ -255,38 +255,3 @@ body {
     display: block;
     cursor: pointer;
 }
-
-/* Mobile version */
-@media screen and (max-width: 460px) {
-    .container {
-
-    }
-
-    /* body {
-        font-size: calc(var(--font-size-main) * var(--multiplicator-sm));
-    }
-
-    .contact_font_sm {
-        font-size: calc(var(--font-size-sm) * var(--multiplicator-sm));
-    }
-
-    .btn_width {
-        width: calc(var(--btn-width) * var(--multiplicator-sm));
-    }
-
-    .command_width {
-        width: calc(var(--command-width) * var(--multiplicator-sm));
-    }
-
-    .command_push_width {
-        width: calc(var(--command-push-width) * var(--multiplicator-sm));
-    }
-
-    .command_currency_width {
-        width: calc(var(--command-currency-width) * var(--multiplicator-sm));
-    }
-
-    .pic_width {
-        width: calc(var(--pic-width) * var(--multiplicator-sm));
-    } */
-}
