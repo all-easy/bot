@@ -13,14 +13,9 @@
     --text-color-illustration-third-line-primary: #FFD232;
     --text-color-illustration-third-line-secondary: #FF3232;
 
-    --content-width-lg: 33%;
-    --content-width-sm: 100%;
-
     --font-size-main: 2.75rem;
     --font-size-md: 1.25rem;
     --font-size-sm: 0.875rem;
-
-    --multiplicator-sm: 0.75;
 }
 
 /* Fonts */
